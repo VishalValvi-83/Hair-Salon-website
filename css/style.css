@@ -14,6 +14,23 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+.btns {
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 20px;
+    background-color: #ff4081;
+    border: none;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.btns:hover {
+    background-color: #e0356d;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
 .title {
     letter-spacing: 2px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

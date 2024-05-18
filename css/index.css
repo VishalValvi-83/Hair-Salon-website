@@ -44,22 +44,6 @@ header {
     color: #fff;
 }
 
-.btns {
-    cursor: pointer;
-    padding: 10px;
-    background-color: #ff4081;
-    border: none;
-    text-decoration: none;
-    color: black;
-    border-radius: 5px;
-}
-
-.btns:hover {
-    background-color: #e0356d;
-    border: none;
-    text-decoration: none;
-    color: black;
-}
 
 section {
     padding: 60px 20px;
@@ -149,7 +133,7 @@ section {
     color: whitesmoke;
     width: max-content;
     border-radius: 5px;
-    font-family: fantasy;
+    font-family: 'Courier New', Courier, monospace;
     width: 100%;
     border: none;
     border-top-left-radius: 50px;
@@ -232,7 +216,7 @@ section {
     color: whitesmoke;
     width: max-content;
     border-radius: 5px;
-    font-family: fantasy;
+    font-family: 'Courier New', Courier, monospace;
     border: none;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
