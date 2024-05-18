@@ -34,23 +34,11 @@
 }
 .service-description {
     margin-top: 15px;
+    font-family: cursive;
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
-.text-center {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.text-center h2 {
-    font-size: 2rem;
-}
-
-.text-center p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
 #services-overview img {
     height: inherit;
     width: 100%;

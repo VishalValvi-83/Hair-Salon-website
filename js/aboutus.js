@@ -19,7 +19,7 @@ loadMoreButton.addEventListener('click', () => {
         const teamMemberHTML = `
             <div>
                 <img class="founder-img" src="${teamMemberImage}" alt="${teamMemberName}">
-                <p class="title">${teamMemberName} - ${teamMemberTitle}</p>
+                <p class="">${teamMemberName} - ${teamMemberTitle}</p>
             </div>
         `;
         teamMembersContainer.innerHTML += teamMemberHTML;
