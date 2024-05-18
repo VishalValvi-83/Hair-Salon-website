@@ -14,7 +14,14 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-
+.title {
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 4px solid #d13267;
+    width: max-content;
+}
 header {
     background-color: #333;
     color: #fff;
