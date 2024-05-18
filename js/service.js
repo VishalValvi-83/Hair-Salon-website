@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
     moreServicebtn.textContent = container.style.display === 'none' ? "Show More Services": "Close";
   });
 });
+

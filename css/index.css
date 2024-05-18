@@ -70,6 +70,7 @@ section {
 }
 
 #highlights {
+    display: none;
     background-color: #f2f2f2;
     background-image: url('./../img/banner.jpeg');
     background-repeat: no-repeat;
@@ -79,7 +80,10 @@ section {
     background-position: center;
     position: relative;
     margin: 0;
+    
 }
+
+
 #back-to-top {
     display: none;
     position: fixed;
