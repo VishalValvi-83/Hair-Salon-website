@@ -50,13 +50,25 @@
         </div>
     </nav>
     <div class="service-banner">
-        <h1 class="text-center title">Services</h1>
+        <div class="service-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <h1 class="text-center fw-bold">Services</h1>
+                        <p class="lead text-center">Experience the best in hair care and styling with our expert
+                            stylists. From precision haircuts to luxurious spa treatments, we have something for
+                            everyone.</p>
+                        <button id="contact-us-button" class="btn btn-primary mt-4">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <section>
+    <div class="bg-dark p-5">
         <!-- Service 1 -->
         <div class="service row">
             <div class="col-md-6">
-                <h2>Haircut & Styling</h2>
+                <h2 class="title">Haircut & Styling</h2>
                 <p class="service-description">Experience precision cuts and styling to enhance your natural beauty. Our
                     expert stylists create looks tailored to your unique style and preferences.</p>
             </div>
@@ -64,16 +76,13 @@
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
-                            <img class="img-fluid "  src="./../img/hairstyle.jpg"
-                            alt="Image 1">
+                            <img class="img-fluid " src="./../img/hairstyle.jpg" alt="Image 1">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img class="img-fluid"  src="./../img/hairstyle2.jpg"
-                                alt="Image 1">
+                            <img class="img-fluid" src="./../img/hairstyle2.jpg" alt="Image 1">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid"  src="./../img/hairstyle3.jpg"
-                                alt="Image 1">
+                            <img class="img-fluid" src="./../img/hairstyle3.jpg" alt="Image 1">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -88,7 +97,7 @@
                     </button>
                 </div>
             </div>
-            
+
         </div>
         <!-- Service 2 -->
         <div class="service row">
@@ -96,16 +105,13 @@
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
-                            <img class="img-fluid "  src="./../img/coloring.jpg"
-                            alt="Image 1">
+                            <img class="img-fluid " src="./../img/coloring.jpg" alt="Image 1">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img class="img-fluid"  src="./../img/hair-coloring-2.jpg"
-                                alt="Image 1">
+                            <img class="img-fluid" src="./../img/hair-coloring-2.jpg" alt="Image 1">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid" src="./../img/hair-coloring.jpg"
-                                alt="Image 1">
+                            <img class="img-fluid" src="./../img/hair-coloring.jpg" alt="Image 1">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -121,7 +127,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <h2>Hair Coloring</h2>
+                <h2 class="title">Hair Coloring</h2>
                 <p class="service-description">Transform your look with our professional hair coloring services. Whether
                     you're looking for a subtle change or a bold new color, we've got you covered.</p>
             </div>
@@ -129,9 +135,9 @@
 
         <!-- Service 3 -->
         <div class="service row">
-            
+
             <div class="col-md-6">
-                <h2>Bridal Hair</h2>
+                <h2 class="title">Bridal Hair</h2>
                 <p class="service-description">Look stunning on your special day with our bridal hair services. We
                     create elegant and timeless hairstyles to complement your wedding look.</p>
             </div>
@@ -139,16 +145,13 @@
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
-                            <img class="img-fluid " src="./../img/bridal_hair.jpg"
-                            alt="Image 1">
+                            <img class="img-fluid " src="./../img/bridal_hair.jpg" alt="Image 1">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img class="img-fluid" src="./../img/bridal_hair-2.jpg"
-                                alt="Image 1">
+                            <img class="img-fluid" src="./../img/bridal_hair-2.jpg" alt="Image 1">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid" src="./../img/bridal_hair.jpg"
-                                alt="Image 1">
+                            <img class="img-fluid" src="./../img/bridal_hair.jpg" alt="Image 1">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -164,49 +167,78 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class=" text-center">
+        <button type="button" class="btns mx-auto fw-bold fs-3 mb-3" id="moreServicebtn">More Services</button>
+        <div id="container">
 
-        <!-- Additional Services -->
-        <div class="service row">
-            <div class="col-md-6">
-                <img src="image_url_4.jpg" alt="Service Image 4">
-            </div>
-            <div class="col-md-6">
-                <h2>Hair Treatments</h2>
-                <p class="service-description">Revitalize your hair with our range of treatments. From deep conditioning
-                    to keratin treatments, we offer solutions to keep your hair healthy and vibrant.</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="bg-dark py-5" id="services-overview">
-        <!-- <h2 class="text-center my-5">Our Services</h2> -->
-        <div class="row g-3 text-center">
-            <div class="col-md-4 ">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="title">Hair Styling</h3>
+            <div class="bg-dark py-5" id="services-overview">
+                <!-- <h2 class="text-center my-5">Our Services</h2> -->
+                <div class="row g-3 text-center">
+                    <div class="col-md-4 ">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="title">Hair Styling</h3>
+                            </div>
+                            <div class="img-container"><img src="./../img/hairstyle.jpg" alt=""></div>
+                            <p class="card-footer">Get the latest haircuts and styles from our professional stylists</p>
+                        </div>
                     </div>
-                    <div class="img-container"><img src="./../img/hairstyle.jpg" alt=""></div>
-                    <p class="card-footer">Get the latest haircuts and styles from our professional stylists</p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="title">Skin Care</h3>
+                            </div>
+                            <div class="img-container"><img class="img-fluid" src="./../img/skin-care.jfif" alt="">
+                            </div>
+                            <p class="card-footer">Experience our rejuvenating skin care treatments</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="title">Spa Treatments</h3>
+                            </div>
+                            <div class="img-container"><img class="img-fluid" src="./../img/spa-treatment.jpg" alt="">
+                            </div>
+
+                            <p class="card-footer">Relax and unwind with our luxurious spa services</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="title">Skin Care</h3>
-                    </div>
-                    <div class="img-container"><img class="img-fluid" src="./../img/skin-care.jfif" alt=""></div>
-                    <p class="card-footer">Experience our rejuvenating skin care treatments</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="title">Spa Treatments</h3>
-                    </div>
-                    <div class="img-container"><img class="img-fluid" src="./../img/spa-treatment.jpg" alt=""></div>
+                <div class="row mt-2 g-3 text-center">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="title">Pedicure</h3>
+                            </div>
+                            <div class="img-container"><img class="img-fluid" src="./../img/pedicure.jpg" alt="">
+                            </div>
 
-                    <p class="card-footer">Relax and unwind with our luxurious spa services</p>
+                            <p class="card-footer">looking to relax, improve the appearance of your feet, a pedicure is the perfect treatment for you. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="title"></h3>
+                            </div>
+                            <div class="img-container"><img class="img-fluid" src="./../img/madicure.jpg" alt="">
+                            </div>
+                            <p class="card-footer">Relax and unwind with our luxury manicure services</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="title"></h3>
+                            </div>
+                            <div class="img-container"><img class="img-fluid" src="./../img/waxing.jfif" alt="">
+                            </div>
+                            <!-- waxing -->
+                            <p class="card-footer">Relax and unwind with our luxury waxing services</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -243,7 +275,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./../js/service.js"></script>
+
 
 </body>
 
