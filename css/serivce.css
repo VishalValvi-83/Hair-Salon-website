@@ -1,0 +1,36 @@
+.service-banner{
+    background-image: url('./../img/services-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 4px solid #d13267;
+    width: max-content;
+}
+
+#services-overview img {
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#services-overview h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+#services-overview p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
