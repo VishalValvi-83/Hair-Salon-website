@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -74,6 +78,7 @@ section {
     background-size: cover;
     background-position: center;
     position: relative;
+    margin: 0;
 }
 #back-to-top {
     display: none;
@@ -100,9 +105,9 @@ section {
     z-index: -1;
 }
 
-#highlights h2 {
+.title {
     letter-spacing: 2px;
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     margin: 0 auto;
     border-bottom: 4px solid #d13267;
@@ -135,17 +140,24 @@ section {
 #services-overview {
     transition: 0.5ms all ease-in;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 #services-overview .img-container {
-    height: 500px;
+    height: 550px;
     margin-bottom: 20px;
 }
+.card{
+    transition: .5ms all ease;
+}
+.card:hover {
+    /* transform scale to form normal zoom */
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+}
 #services-overview img {
-    height: 500px;
+    height: inherit;
     width: 100%;
     object-fit: cover;
 }
@@ -174,13 +186,31 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+.br-tag{
+    display: none;
+}
 @media screen and (max-width: 600px) {
     #services-overview img {
         height: 100%;
-
+        object-fit: fill;
     }
-
+    .br-tag{
+        display: inline;
+    }
+    #highlights p {
+    margin-bottom: 1rem;
+    padding: 10px 20px;
+    background-color: #d13267;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    width: max-content;
+    border-radius: 5px;
+    font-family: fantasy;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* font-size: 1.2em; */
+    }
     .reviews {
         padding: 20px;
         height: 100%;
