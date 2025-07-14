@@ -1,0 +1,26 @@
+name: Auto Commit
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # Runs every hour
+  workflow_dispatch:       # Allows manual run
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Make file changes (add/update log.txt)
+        run: |
+          echo "Updated on $(date)" >> log.txt
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Auto update on $(date)" || echo "No changes to commit"
+          git push
