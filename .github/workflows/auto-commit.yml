@@ -1,8 +1,9 @@
-name: Auto Commit
+name: Auto Commit Creative
 
 on:
   schedule:
-   - cron: '30 6 * * *'
+    - cron: '30 2 * * *'
+    - cron: '30 14 * * *'
   workflow_dispatch:
 
 jobs:
@@ -13,14 +14,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Make file changes (add/update log.txt)
+      - name: Make file changes (creative update to log.txt)
         run: |
-          echo "Updated on $(date)" >> log.txt
+          #!/bin/bash
+          QUOTES=("Create something today."
+                  "Stay curious, keep building."
+                  "Tiny steps, big results."
+                  "Design with delight."
+                  "Code + Creativity = Magic ✨")
+
+          # Pick a random quote
+          QUOTE=${QUOTES[$RANDOM % ${#QUOTES[@]}]}
+
+          echo "[$(date -u '+%Y-%m-%d %H:%M:%S UTC')] $QUOTE" >> log.txt
 
       - name: Commit and push changes
         run: |
           git config user.name "VishalValvi-83"
           git config user.email "vishalvalvi2529@gmail.com"
-          git add .
-          git commit -m "Auto update on $(date)" || echo "No changes to commit"
+          git add log.txt
+          git commit -m "Auto creative update on $(date -u '+%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
